@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: "Fredoka", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #9BCF53;
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background-color: #71973c;
+}
+
+.linkNavBar{
+    text-decoration: none;
+    color: white;font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: 600;
+
+}
+.card-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.tittle {
+    width: 100%;
+    margin: 2rem 0;
+    
+}
+
+.tittle h1 {
+    color: #000000bb;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card {
+    width: 300px;
+    background-color: #ffffffae;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #294B29;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin: 5px 0;
+    color: #555;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-view:hover {
+    background-color: #0056b3;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+@media  (max-width: 768px) {
+
+}

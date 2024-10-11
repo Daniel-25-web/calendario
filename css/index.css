@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.navBarContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background-color: #71973c;
+}
+
+.linkNavBar{
+    text-decoration: none;
+    color: white;font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: 600;
+
+}
+
+.container {
+    font-family: "Fredoka", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #9BCF53;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.form {
+    width: 25rem;
+    color: #294B29;
+    display: flex;
+    flex-direction: column;
+    background-color: #BFEA7C;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.inpuntSimple {
+    font-size: 1.1em;
+    border: none;
+    margin: 1em 0;
+    height: 3em;
+    text-align: center;
+    color: #fff;
+    background-color: #859c60;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+.inpuntSimple:focus {
+    outline: none;
+    background-color: #9BCF53;
+}
+
+.inpuntSimple::placeholder {
+    color: white;
+    font-weight: 400;
+}
+
+.inpuntDate {
+    border: none;
+    background-color: #859c60;
+    height: 3em;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: 1em 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.texteObser {
+    border: none;
+    background-color: #859c60;
+    height: 7em;
+    border-radius: 0.5em;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.texteObser::placeholder {
+    color: white;
+}
+
+.texteObser:focus {
+    outline: none;
+}
+
+.inpuntDate:focus {
+    outline: none;
+}
+
+.btnUpload {
+    margin: 1em auto;
+    width: fit-content;
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    background-color: #62da17;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow:
+        0 4px 6px -1px #488aec31,
+        0 2px 4px -1px #488aec17;
+    transition: all 0.6s ease;
+}
+
+.btnUpload:hover {
+    box-shadow:
+        0 10px 15px -3px #488aec4f,
+        0 4px 6px -2px #488aec17;
+}
+
+.btnUpload:focus,
+.btnUpload:active {
+    opacity: 0.85;
+    box-shadow: none;
+}
+
+.btnUpload svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.addRegister {
+    margin: 1em auto;
+    width: fit-content;
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    background-color: #178cda;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow:
+        0 4px 6px -1px #488aec31,
+        0 2px 4px -1px #488aec17;
+    transition: all 0.6s ease;
+}
+
+/* Para que el input de tipo file no se vea como botón */
+input[type=file] {
+    display: none;
+}
+
+/* Para que el input de tipo ddate no se vea como botón */
+input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+/* Para que el input de tipo ddate no se vea como botón */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+@media  (max-width: 768px) {
+
+    .title{
+        font-size: 1.8em;
+    }
+    .form{
+        max-width: 80%;
+    }
+    .inpuntSimple{
+        font-size: 0.9em;
+        height: 2.5em;
+    }
+    .inpuntDate{
+        font-size: 0.9em;
+        height: 2.5em;
+    }
+    .texteObser{
+        font-size: 0.9em;
+        height: 5em;
+    }
+}
